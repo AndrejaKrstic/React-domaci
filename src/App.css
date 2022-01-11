@@ -5,6 +5,7 @@ body {
   background-image: url("https://media.voguebusiness.com/photos/5c73d4ac262b2a34d41abf51/16:9/w_1920,c_limit/nike-image-voguebusnike-feb--19-50-50-bundle.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
 }
 .menu-bar {
   background-color: black;
