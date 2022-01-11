@@ -91,7 +91,6 @@ body {
   border-style: none;
   background-color: transparent;
   margin: 20px;
-  width: 10%;
 }
 .btn:hover {
   cursor: pointer;
@@ -116,4 +115,25 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   padding: 5px;
+}
+.div-order {
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  margin: 20px;
+}
+.txt-total {
+  text-align: end;
+}
+.table-order {
+  text-align: center;
+}
+th {
+  padding: 10px;
+}
+td {
+  padding-left: 15px;
+  padding-right: 15px;
 }
