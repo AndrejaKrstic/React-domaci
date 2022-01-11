@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { BsCartFill } from "react-icons/bs";
 
-function MenuBar({ cartNum, isHome }) {
+function MenuBar({ cartNum, isHome, isShop }) {
   return (
     <div className={isHome === 1 ? "menu-bar" : "menu-else"}>
       <Link to="/" className="link-img-nike">
@@ -12,18 +13,30 @@ function MenuBar({ cartNum, isHome }) {
       </Link>
       {isHome === 1 ? <br /> : <></>}
 
-      <Link to="/" className="txt-nike">
+      <Link to="/" className={isHome === 1 ? "txt-nike" : "txt-nike-else"}>
         Nike
       </Link>
-      <div className="menu-bar-items-div">
-        <Link to="/shop" className="menu-bar-items">
+      <div
+        className={
+          isHome === 1 ? "menu-bar-items-div" : "menu-bar-items-div-else"
+        }
+      >
+        <Link
+          to="/shop"
+          className="menu-bar-items"
+          style={isShop === 1 ? { color: "red" } : { color: "white" }}
+        >
           Shop
         </Link>
-        {isHome === 1 ? <br /> : <></>}
-        <Link to="/contact" className="menu-bar-items">
-          Contact
-        </Link>
       </div>
+      {isShop === 1 ? (
+        <Link to="/cart" className="cart-items">
+          <BsCartFill className="icon-cart" />
+          <p className="cart-num">{cartNum}</p>
+        </Link>
+      ) : (
+        <></>
+      )}
     </div>
   );
 }

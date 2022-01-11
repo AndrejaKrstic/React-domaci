@@ -8,6 +8,7 @@ function SingleProduct({ product, onAdd, inCart }) {
       <div className="card-body">
         <h3 className="card-title">{product.title}</h3>
         <p className="card-text">{product.description}</p>
+        <p className="card-price">{product.price}</p>
       </div>
       {inCart === 1 ? (
         <>
