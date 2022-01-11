@@ -1,38 +1,45 @@
-.App {
+* {
+  font-family: "Poppins";
+}
+body {
+  background-image: url("https://media.voguebusiness.com/photos/5c73d4ac262b2a34d41abf51/16:9/w_1920,c_limit/nike-image-voguebusnike-feb--19-50-50-bundle.jpg");
+}
+.menu-bar {
+  background-color: black;
+  width: 20%;
+  height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img-nike {
+  margin-top: 30px;
+  width: 55%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.menu-else {
+  background-color: black;
+  width: 100%;
+  height: 9vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.img-nike-else {
+  width: 12%;
+}
+.txt-nike {
   color: white;
+  font-size: 35px;
+  text-decoration: none;
+  text-align: center;
 }
-
-.App-link {
-  color: #61dafb;
+.menu-bar-items {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  margin: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-bar-items-div {
+  margin-top: 40px;
+  width: fit-content;
+}
+.img-sneakers {
+  width: 300px;
 }
